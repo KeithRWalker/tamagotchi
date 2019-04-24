@@ -1,15 +1,9 @@
 import '../styles/main.scss';
 
-import eat from './components/actions/eat';
-import fight from './components/actions/fight';
-import play from './components/actions/play';
-import sleep from './components/actions/sleep';
+import pet from './components/pet/pet';
 
 const init = () => {
-  eat.eatBuild();
-  fight.fightBuild();
-  play.playBuild();
-  sleep.sleepBuild();
+  pet.quadBuild();
 };
 
 init();
