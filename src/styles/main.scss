@@ -1,4 +1,53 @@
+@import './_colors';
+
 body{
+  background-color: $background;
+  color: $textColor;
+}
+
+
+#app{
+  border: $border1;
+}
+#progress{
+  border: $border2;
+  background-color: blue;
+}
+#eat{
+  border: $border3;
+  background-color: green;
+}
+#play{
+  border: $border4;
   background-color: black;
-  color: aliceblue;
+  color: white;
+}
+#fight{
+  border: $border5;
+  background-color: orange;
+}
+#sleep{
+  border: $border6;
+  background-color: purple;
+}
+#pet{
+  border: $border7;
+  background-color: white;
+}
+.quad{
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+#pet{
+  width: 500px;
+  height: 500px;
+}
+#progress{
+  width: 100%;
+  height: 50px;
+}
+#app{
+padding: 10px;
 }
