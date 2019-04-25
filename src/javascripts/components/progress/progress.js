@@ -39,20 +39,20 @@ const progress = () => {
     strengthNum -= 1;
     energyNum -= 1;
     funNum -= 1;
-    if (fullNum <= 0) { fullNum = 0; }
-    if (strengthNum <= 0) { strengthNum = 0; }
-    if (energyNum <= 0) { energyNum = 0; }
-    if (funNum <= 0) { funNum = 0; }
-  }, 1000);
-  setInterval(() => {
     document.getElementById('eatProgPer').innerHTML = `${fullNum} %`;
     document.getElementById('playProgPer').innerHTML = `${funNum} %`;
     document.getElementById('fightProgPer').innerHTML = `${strengthNum} %`;
     document.getElementById('sleepProgPer').innerHTML = `${energyNum} %`;
+  }, 100);
+  setInterval(() => {
     if (fullNum >= 100) { fullNum = 100; }
     if (strengthNum >= 100) { strengthNum = 100; }
     if (energyNum >= 100) { energyNum = 100; }
     if (funNum >= 100) { funNum = 100; }
+    if (fullNum <= 0) { fullNum = 1; }
+    if (strengthNum <= 0) { strengthNum = 1; }
+    if (energyNum <= 0) { energyNum = 1; }
+    if (funNum <= 0) { funNum = 1; }
   }, 1);
 };
 
