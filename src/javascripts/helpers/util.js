@@ -9,7 +9,7 @@ const btnBuild = (type, content, id) => {
 };
 
 const progBuild = (value, max, id) => {
-  const progString = `<progress value="${value}" max="${max}" id="${id}"></progress>`;
+  const progString = `<progress value="${value}" max="${max}" id="${id}"></progress><h1 id="${id}Per"></h1>`;
   return progString;
 };
 

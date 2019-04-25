@@ -1,9 +1,8 @@
 import util from '../../helpers/util';
-import progress from '../progress/progress';
 
 const quadBuild = () => {
   const runBtn = util.btnBuild('fightBtn', 'Run Away!', 'runBtn');
-  const punchBtn = util.btnBuild('fightBtn', 'Punch!', 'healthBtn');
+  const punchBtn = util.btnBuild('fightBtn', 'Punch!', 'punchBtn');
   const fightProg = util.progBuild('100', '100', 'fightProg');
 
   const codeBtn = util.btnBuild('playBtn', 'Code', 'codeBtn');
@@ -27,8 +26,6 @@ const quadBuild = () => {
   util.printToDom('play', playQuad);
   util.printToDom('sleep', sleepQuad);
   util.printToDom('eat', eatQuad);
-  const healthyFood = document.getElementById('healthBtn');
-  healthyFood.addEventListener('click', progress.progDrain);
 };
 
 export default { quadBuild };

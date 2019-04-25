@@ -6,7 +6,7 @@ import pet from './components/pet/pet';
 
 const init = () => {
   pet.quadBuild();
-  progress.progDrain();
+  progress.progress();
 };
 
 init();
