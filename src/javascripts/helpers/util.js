@@ -8,8 +8,8 @@ const btnBuild = (type, content, id) => {
   return btnString;
 };
 
-const progBuild = (value, max, id) => {
-  const progString = `<progress value="${value}" max="${max}" id="${id}"></progress><h1 id="${id}Per"></h1>`;
+const progBuild = (value, max, id, type) => {
+  const progString = `<h4>${type}</h4><h1 id="${id}Per"></h1><progress value="${value}" max="${max}" id="${id}"></progress>`;
   return progString;
 };
 
